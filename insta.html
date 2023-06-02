@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Instagram</title>
+    <link rel="stylesheet" href="insta.css">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/cd5367e02f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="bg-container">
+        <nav class="navbar fixed-top d-md-none">
+            <h1 class="insta-heading">Instagram</h1>
+            <input type="search" class="search-box" placeholder="    Search"/>
+            <i class="fa-regular fa-heart heart-icon"></i>
+        </nav>
+        <div class="side-bar d-none d-md-block">
+            <h1 class="side-bar-title" id="heading" onclick="changeHeading()">Instagram</h1>
+            <div class="options-container">
+                <div class="option-container">
+                    <a href="#" ><i class="fa-solid fa-house option-icon"></i></a>
+                    <a href="#" class="option-text">Home</a>
+                </div>
+                <div class="option-container">
+                    <a href="#" ><i class="fa-solid fa-magnifying-glass option-icon"></i></a>
+                    <a href="#" class="option-text">Search</a>
+                </div>
+                <div class="option-container">
+                    <a href="#" ><i class="fa-solid fa-clapperboard option-icon"></i></a>
+                    <a href="#" class="option-text">Reels</a>
+                </div>
+                <div class="option-container">
+                    <a href="#" ><i class="fa-regular fa-compass option-icon"></i></a>
+                    <a href="#" class="option-text">Explore</a>
+                </div>
+                <div class="option-container">
+                    <a href="#" ><i class="fa-brands fa-facebook-messenger option-icon"></i></a>
+                    <a href="#" class="option-text">Message</a>
+                </div>
+                <div class="option-container">
+                    <a href="#" ><i class="fa-regular fa-square-plus option-icon"></i></a>
+                    <a href="#" class="option-text">Create</a>
+                </div>
+                <div class="option-container">
+                    <a href="#" ><i class="fa-regular fa-heart option-icon"></i></a>
+                    <a href="#" class="option-text">Notifications</a>
+                </div>
+                <div class="profile-container">
+                    <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676447303/pexels-luis-quintero-1759531_ebmyk7.jpg" class="profile-icon-image" />
+                    <a href="#" class="option-text">Profile</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="stories-container">
+                <div class="story-container">
+                    <img class="story-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1646804217/cld-sample.jpg">
+                    <p class="profile-name">sam_16</p>
+                </div>
+                <div class="story-container">
+                    <img class="story-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676547457/photo-1466112928291-0903b80a9466_pju8gv.jpg">
+                    <p class="profile-name">ram_34</p>
+                </div>
+                <div class="story-container">
+                    <img class="story-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676452918/pexels-sindre-fs-1040881_r3f3ib.jpg">
+                    <p class="profile-name">tej_89</p>
+                </div>
+                
+                <div class="story-container">
+                    <img class="story-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1646804199/samples/people/kitchen-bar.jpg">
+                    <p class="profile-name">sai_22</p>
+                </div>
+                <div class="story-container">
+                    <img class="story-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1646804203/samples/people/boy-snow-hoodie.jpg">
+                    <p class="profile-name">sri_20</p>
+                </div>
+                </div>
+                <div class="newsfeed-section">
+                <div class="post">
+                    <div class="username-section">
+                        <div class="user-profile ml-3 mt-2">
+                            <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676473469/pexels-suliman-sallehi-1704488_xaaiu4.jpg" class="profile-icon-image">
+                            <p class="username">ram_1</p>
+                        </div>
+                        <div class="mr-3">
+                            <i class="fas fa-ellipsis-h" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                    <div class="post-image-section mt-0">
+                        <img class="post-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676453035/pexels-victor-freitas-733767_eexnqn.jpg">
+                    </div>
+                    <div class="post-reaction-section pr-3 pl-3">
+                        <div>
+                            <i class="far fa-heart" id="like" onclick="toggleLike()"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-bookmark" id="savePost" onclick="toggleSave()"></i>
+                        </div>
+                    </div>
+                    <p class="pl-3 likes"><span id="likeNumber">250</span> Likes</p>
+                    <p class="pl-3 comments">View all 20 comments</p>
+                    <div class="comment-section">
+                        <input placeholder="Add a comment" class="comment-box" />
+                        <i class="far fa-smile-beam smile-emoji"></i>
+                    </div>
+                    <hr />
+                </div>
+                <div class="post">
+                    <div class="username-section">
+                        <div class="user-profile ml-3 mt-2">
+                            <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676452918/pexels-sindre-fs-1040881_r3f3ib.jpg" class="profile-icon-image">
+                            <p class="username">kiran_24</p>
+                        </div>
+                        <div class="mr-3">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-image-section mt-0">
+                        <img class="post-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676473469/pexels-suliman-sallehi-1704488_xaaiu4.jpg">
+                    </div>
+                    <div class="post-reaction-section pr-3 pl-3">
+                        <div>
+                            <i class="far fa-heart" id="likeOne" onclick="toggleLike()"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <p class="pl-3 likes">350 Likes</p>
+                    <p class="pl-3 comments">View all 30 comments</p>
+                    <div class="comment-section">
+                        <input placeholder="Add a comment" class="comment-box" />
+                        <i class="far fa-smile-beam smile-emoji"></i>
+                    </div>
+                    <hr />
+                </div>
+                <div class="post">
+                    <div class="username-section">
+                        <div class="user-profile ml-3 mt-2">
+                            <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676447303/pexels-luis-quintero-1759531_ebmyk7.jpg" class="profile-icon-image">
+                            <p class="username">suresh_55</p>
+                        </div>
+                        <div class="mr-3">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-image-section mt-0">
+                        <img class="post-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676453825/pexels-roly-vasquez-682355_yefzfn.jpg">
+                    </div>
+                    <div class="post-reaction-section pr-3 pl-3">
+                        <div>
+                            <i class="far fa-heart" id="like" onclick="toggleLike()"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <p class="pl-3 likes">150 Likes</p>
+                    <p class="pl-3 comments">View all 10 comments</p>
+                    <div class="comment-section">
+                        <input placeholder="Add a comment" class="comment-box" />
+                        <i class="far fa-smile-beam smile-emoji"></i>
+                    </div>
+                    <hr />
+                </div>
+                <div class="post">
+                    <div class="username-section">
+                        <div class="user-profile ml-3 mt-2">
+                            <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1646804217/cld-sample.jpg" class="profile-icon-image">
+                            <p class="username">sam_1</p>
+                        </div>
+                        <div class="mr-3">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-image-section mt-0">
+                        <img class="post-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1646804217/cld-sample.jpg">
+                    </div>
+                    <div class="post-reaction-section pr-3 pl-3">
+                        <div>
+                            <i class="far fa-heart" id="like" onclick="toggleLike()"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <p class="pl-3 likes">250 Likes</p>
+                    <p class="pl-3 comments">View all 20 comments</p>
+                    <div class="comment-section">
+                        <input placeholder="Add a comment" class="comment-box" />
+                        <i class="far fa-smile-beam smile-emoji"></i>
+                    </div>
+                    <hr />
+                </div>
+
+        
+            </div>    
+        </div>
+        <div class="right-section d-none d-md-block">
+                <div class="profile-section">
+                    <div class="d-flex">
+                        <img class="profile-image" src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676447303/pexels-luis-quintero-1759531_ebmyk7.jpg">
+                        <div class="profile-name-container">
+                            <p class="profile-name">arun_kumar</p>
+                            <p class="username">Arun Kumar</p>
+                        </div>
+                    </div>
+                    <div class="switch-box"><a href="" class="active-text">switch</a></div>
+                </div>
+                <div class="suggs-section">
+                    <div class="sugg-top">
+                        <p class="sugg-heading">Suggestions for you</p>
+                        <p class="see-all">See All</p>
+                    </div>
+                    <div class="sugg-box">
+                        <div class="d-flex">
+                           <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676703530/Cool-Swag-Funny-Attitude-Stylish-Cute-Creative-Instagram-Bios-Ideas-for-Boys-Girls_nk5dq1.jpg" class="sugg-profile-image"/>
+                           <div class="profile-name-container">
+                            <p class="profile-name">hema_sri</p>
+                            <p class="username">New to instagram</p>
+                           </div>
+                        </div>
+                        <a class="active-text p-3" href="#" id="follow" onclick="onClickFollow()">Follow</a>
+                    </div>
+                    <div class="sugg-box">
+                        <div class="d-flex">
+                           <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676705093/photo-1506794778202-cad84cf45f1d_f23oip.jpg" class="sugg-profile-image"/>
+                           <div class="profile-name-container">
+                            <p class="profile-name">kiran_royal</p>
+                            <p class="username">Followed by sam_16</p>
+                           </div>
+                        </div>
+                        <a href="" class="active-text p-3">Follow</a>
+                    </div>
+                    <div class="sugg-box">
+                        <div class="d-flex">
+                           <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676547657/in-the-photo-studio-with-professional-equipment-portrait-of-the-famous-photographer-holding_f3n6uf.jpg" class="sugg-profile-image"/>
+                           <div class="profile-name-container">
+                            <p class="profile-name">harish_dp</p>
+                            <p class="username">Followed by ram_34</p>
+                           </div>
+                        </div>
+                        <a href="" class="active-text p-3">Follow</a>
+                    </div>
+                    <div class="sugg-box">
+                        <div class="d-flex">
+                           <img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676704970/member-jk_sgvdr0.jpg" class="sugg-profile-image"/>
+                           <div class="profile-name-container">
+                            <p class="profile-name">innocent_boy
+                            </p>
+                            <p class="username">Followed by tej_89</p>
+                           </div>
+                        </div>
+                        <a href="" class="active-text p-3">Follow</a>
+                    </div>
+                </div>
+                <div class="footer-section m-2 p-2">
+                   <p class="footer-text">About.Help.Press.Api.Jobs.
+                    Privacy.Terms.Location.Language
+                   </p>
+                   <p class="footer-brand">
+                    <span><i class="fa-regular fa-copyright"></i></span>
+                    2023 INSTAGRAM FROM META</p>
+                </div>
+        </div>
+
+        <div class="footer fixed-bottom d-md-none">
+            <a href="#"><i class="fa-solid fa-house option-icon"></i></a>
+            <a href="#"><i class="fa-solid fa-compass option-icon"></i></a>
+            <a href="#"><i class="fa-solid fa-clapperboard option-icon"></i></a>
+            <a href="#"><i class="fa-regular fa-square-plus option-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-messenger option-icon"></i></a>
+            <a href="#"><img src="https://res.cloudinary.com/dnejnzwka/image/upload/v1676447303/pexels-luis-quintero-1759531_ebmyk7.jpg" class="profile-icon-image" />
+       </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="insta.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
